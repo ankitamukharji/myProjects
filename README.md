@@ -13,15 +13,23 @@ for i in range(0,50):
   print(c)
 
 #programme no.2
+original_list = [10, 20, 30, 40, 50, 60] 
+new_list = [original_list[len(original_list) - i]
+            for i in range(1, len(original_list)+1)]
+print(new_list)
+OR
 wor = ('a,n,k,i,t,a')   
 print(wor[::-1])
 
 #Programming no. 3
-list = [10,20,30,40,50]
-for i in list:
-if n%2 == 0:
-even_count += 1
-else:
-odd_count += 1
- print("The even count is ," even_count)
- print("The odd count is,"odd_count)
+num = [1,2,3,4,5,6]
+x = len(num)
+even = []
+odd = []
+for i in range(x):
+  if num[i]%2==0:
+    even.append(num[i])
+  else:
+    odd.append(num[i])
+print ('odd numbers are :',odd)
+print ('even numbers are :',even)
